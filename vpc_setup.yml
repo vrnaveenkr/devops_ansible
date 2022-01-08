@@ -150,18 +150,18 @@
 
     # Storing Variable and setting facts for real time usage
     - set_facts:
-        vpc_id: "{{vpcout.vpc.id}}"
-        pubsub1id: "{{pubsub1_out.subnet.id}}"
-        pubsub2id: "{{pubsub2_out.subnet.id}}"
-        pubsub3id: "{{pubsub3_out.subnet.id}}"
-        privsub1id: "{{privsub1_out.subnet.id}}"
-        privsub2id: "{{privsub2_out.subnet.id}}"
-        privsub3id: "{{privsub3_out.subnet.id}}"
-        igw_id: "{{igw_out.gateway_id}}}"
-        pubRTid: "{{pubRT_out.route_table.id}}"
-        NATGWid: "{{NATGW_out.nat_gateway_id}}"
-        privRTid: "{{privRT_out.route_table.id}}"
-        cacheable: yes
+      vpc_id: "{{vpcout.vpc.id}}"
+      pubsub1id: "{{pubsub1_out.subnet.id}}"
+      pubsub2id: "{{pubsub2_out.subnet.id}}"
+      pubsub3id: "{{pubsub3_out.subnet.id}}"
+      privsub1id: "{{privsub1_out.subnet.id}}"
+      privsub2id: "{{privsub2_out.subnet.id}}"
+      privsub3id: "{{privsub3_out.subnet.id}}"
+      igw_id: "{{igw_out.gateway_id}}}"
+      pubRTid: "{{pubRT_out.route_table.id}}"
+      NATGWid: "{{NATGW_out.nat_gateway_id}}"
+      privRTid: "{{privRT_out.route_table.id}}"
+      cacheable: yes
 
     - name: Create variables file for vpc outputs
       copy:
