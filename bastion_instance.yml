@@ -36,9 +36,9 @@
         vpc_id: "{{vpc_id}}"
         rules:
           - proto: tcp
-          - from_port: 22
-          - to_port: 22
-          - cidr_ip: "{{MYIP}}"
+            from_port: 22
+            to_port: 22
+            cidr_ip: "{{MYIP}}"
       register: Bastion_sg_out
 
 
@@ -60,4 +60,5 @@
           Project: Devops-PrivRT
           Owner: Devops Team
         group_id: "{{Bastion_sg_out.group_id}}"
+        vpc_subnet_id: "{{pubsub1id}}"
       register: bastion
