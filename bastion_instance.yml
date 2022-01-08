@@ -60,4 +60,4 @@
           Project: Devops-PrivRT
           Owner: Devops Team
         group_id: "{{Bastion_sg_out.group_id}}"
-      register: bastionhost_out
+      register: bastion

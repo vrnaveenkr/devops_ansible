@@ -123,7 +123,7 @@
 
 
     - name: Creat new NAT Gateway aned allocate new IEP if NAT gateway doesn't exist 
-      ec2_vpc_natgateway:
+      ec2_vpc_nat_gateway:
         state: "{{state}}"
         subnet_id: "{{pubsub1_out.subnet.id}}"
         wait: yes
