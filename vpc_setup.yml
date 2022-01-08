@@ -20,7 +20,7 @@
       register: vpcout
     
     - debug:
-      var: vpcout
+        var: vpcout
 
     - name: Create Public Subnet 1 in Zone
       ec2_vpc_subnet:
@@ -35,4 +35,4 @@
       register: pubsub1_out
 
     - debug:
-      var: pubsub1_out
+        var: pubsub1_out
