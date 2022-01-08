@@ -18,3 +18,21 @@
         tenancy: default
         state: "{{state}}"
       register: vpcout
+    
+    - debug:
+      var: vpcout
+
+    - name: Create Public Subnet 1 in Zone
+      ec2_vpc_subnet:
+        vpc_id: "{{vpcout.vpc.id}}"
+        region: "{{region}}"
+        az: "{{zone1}}"
+        state: "{{state}}"
+        cidr: "{{pubSub1Cidr}}"
+        map_public: yes
+        resource_tags:
+          Name: devops-pubsub1
+      register: pubsub1_out
+
+    - debug:
+      var: pubsub1_out
