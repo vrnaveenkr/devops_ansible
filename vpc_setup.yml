@@ -128,7 +128,7 @@
         subnet_id: "{{pubsub1_out.subnet.id}}"
         wait: yes
         region: "{{region}}"
-        if_exist_do_not_crate: true
+        if_exist_do_not_create: true
       register: NATGW_out
 
 
