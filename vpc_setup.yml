@@ -147,8 +147,6 @@
             gateway_id: "{{NATGW_out.nat_gateway_id}}"
       register: privRT_out
 
-
-    # Storing Variable and setting facts for real time usage
     - set_facts:
         vpc_id: "{{vpcout.vpc.id}}"
         pubsub1id: "{{pubsub1_out.subnet.id}}"
