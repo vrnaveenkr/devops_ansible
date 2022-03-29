@@ -2,7 +2,7 @@
 # Teting Pre commits
 - hosts: localhost
   connection: local
-  gather_facts: False
+  gather_facts: false
 
   tasks:
     - name: Import Bastion Variable
